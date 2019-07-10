@@ -1,0 +1,23 @@
+{
+  "name": "premise-protect-hub",
+  "version": "1.0.0",
+  "description": "Premise Protect Hub server for the premise protect system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/premise-protect/Hub.git"
+  },
+  "keywords": [
+    "Access",
+    "Control"
+  ],
+  "author": "Premise Protect",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/premise-protect/Hub/issues"
+  },
+  "homepage": "https://github.com/premise-protect/Hub#readme"
+}
