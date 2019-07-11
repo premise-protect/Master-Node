@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/premise-protect/Hub/issues"
   },
-  "homepage": "https://github.com/premise-protect/Hub#readme"
+  "homepage": "https://github.com/premise-protect/Hub#readme",
+  "dependencies": {}
 }

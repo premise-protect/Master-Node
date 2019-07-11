@@ -1,0 +1,86 @@
+<mk-box header="About sidebar left component" [isCollapsable]="false" [isRemovable]="false">
+  <p>The sidebar left component is used for displaying the menu of the layout configuraton (see <a routerLink="/layout/configuration">layout configuration</a>).<br/> Yon can also add any HTML elements which will be displayed above the menu.</p>
+</mk-box>
+
+<mk-box header="HTML" [isCollapsable]="false" [isRemovable]="false">
+  <pre><code class="language-html">
+    <mk-layout-sidebar-left>
+<div class="user-panel">
+  <div class="pull-left image">
+    <img src="assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+  </div>
+  <div class="pull-left info">
+    <p>Alexander Pierce</p>
+    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+  </div>
+</div>
+<form action="#" method="get" class="sidebar-form">
+  <div class="input-group">
+    <input type="text" name="q" class="form-control" placeholder="Search...">
+    <span class="input-group-btn">
+      <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+      </button>
+    </span>
+  </div>
+</form>
+</mk-layout-sidebar-left>
+</code></pre>
+</mk-box>
+
+<mk-box header="sidebar left menu configuration" [isCollapsable]="true" [isRemovable]="false" contentStyleClasses="table-responsive">
+  <pre><code class="language-typescript">sidebarLeftMenu: [
+  &#123;label: 'MAIN NAVIGATION', separator: true&#125;,
+  &#123;label: 'Start', route: '/', iconClasses: 'fa fa-th'&#125;,
+  &#123;label: 'Parent', iconClasses: 'fa fa-files-o', children: [
+    &#123;label: 'Children', route: 'parent/children'&#125;,
+    &#123;label: 'Parent 2', children: [
+      &#123;label: 'Children 2', route: 'parent/parent2/children2'&#125;
+    ]&#125;
+    ...
+  ]&#125;
+]
+  </code></pre>
+</mk-box>
+
+<mk-box header="sidebar left menu item properties" [isCollapsable]="true" [isRemovable]="false" contentStyleClasses="table-responsive">
+  <table class="table table-bordered table-hover">
+    <tbody>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Label</td>
+        <td>string</td>
+        <td>null</td>
+        <td>Set the menu item label.</td>
+      </tr>
+      <tr>
+        <td>iconClasses</td>
+        <td>string</td>
+        <td>'fa fa-circle-o'</td>
+        <td>Set the menu item iclon classes.</td>
+      </tr>
+      <tr>
+        <td>separator</td>
+        <td>boolean</td>
+        <td>false</td>
+        <td>Defines if the menu item is a separator.</td>
+      </tr>
+      <tr>
+        <td>route</td>
+        <td>string</td>
+        <td>null</td>
+        <td>Set the menu item route.</td>
+      </tr>
+      <tr>
+        <td>children</td>
+        <td>Array<Item></td>
+        <td>null</td>
+        <td>Defines the item children.</td>
+      </tr>
+    </tbody>
+  </table>
+</mk-box>
